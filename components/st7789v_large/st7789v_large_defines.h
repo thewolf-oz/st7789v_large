@@ -1,7 +1,7 @@
 #pragma once
 
 namespace esphome {
-namespace ili9341 {
+namespace st7789v_large {
 
 // Color definitions
 // clang-format off
@@ -79,5 +79,5 @@ static const uint8_t ILI9341_RDIDX = 0xDD;  // TBC
 static const uint8_t ILI9341_GMCTRP1 = 0xE0;
 static const uint8_t ILI9341_GMCTRN1 = 0xE1;
 
-}  // namespace ili9341
+}  // namespace st7789v_large
 }  // namespace esphome
