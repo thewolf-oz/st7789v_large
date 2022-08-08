@@ -1,13 +1,13 @@
-#include "ili9341_display.h"
+#include "st7789v_large_display.h"
 #include "esphome/core/log.h"
 #include "esphome/core/application.h"
 #include "esphome/core/helpers.h"
 #include "esphome/core/hal.h"
 
 namespace esphome {
-namespace ili9341 {
+namespace st7789v_large {
 
-static const char *const TAG = "ili9341";
+static const char *const TAG = "st7789v_large";
 
 void ILI9341Display::setup_pins_() {
   this->init_internal_(this->get_buffer_length_());
@@ -27,7 +27,7 @@ void ILI9341Display::setup_pins_() {
 }
 
 void ILI9341Display::dump_config() {
-  LOG_DISPLAY("", "ili9341", this);
+  LOG_DISPLAY("", "st7789v_large", this);
   ESP_LOGCONFIG(TAG, "  Width: %d, Height: %d,  Rotation: %d", this->width_, this->height_, this->rotation_);
   LOG_PIN("  Reset Pin: ", this->reset_pin_);
   LOG_PIN("  DC Pin: ", this->dc_pin_);
@@ -268,6 +268,7 @@ void ILI9341TFT24R::initialize() {
   this->init_lcd_(INITCMD_TFT);
   this->width_ = 320;
   this->height_ = 240;
+  this->invert_display_(true);
   this->fill_internal_(Color::BLACK);
 }
 
