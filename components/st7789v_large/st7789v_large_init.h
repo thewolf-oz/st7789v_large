@@ -2,7 +2,7 @@
 #include "esphome/core/helpers.h"
 
 namespace esphome {
-namespace ili9341 {
+namespace st7789v_large {
 
 // clang-format off
 static const uint8_t PROGMEM INITCMD_M5STACK[] = {
