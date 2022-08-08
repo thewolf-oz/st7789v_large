@@ -3,11 +3,11 @@
 #include "esphome/core/component.h"
 #include "esphome/components/spi/spi.h"
 #include "esphome/components/display/display_buffer.h"
-#include "ili9341_defines.h"
-#include "ili9341_init.h"
+#include "st7789v_large_defines.h"
+#include "st7789v_large_init.h"
 
 namespace esphome {
-namespace ili9341 {
+namespace st7789v_large {
 
 enum ILI9341Model {
   M5STACK = 0,
